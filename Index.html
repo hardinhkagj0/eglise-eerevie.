@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#172554">
+  <title>Grande Veillée de Prière | Église Érévie</title>
+  <meta name="description" content="Participez à la Grande Veillée de Prière de l'Église Érévie Présente à Yopougon Banco.">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f3f4f6;
+      color: #1f2937;
+      text-align: center;
+    }
+    header {
+      background: #172554;
+      color: white;
+      padding: 28px 16px;
+    }
+    main {
+      max-width: 650px;
+      margin: 24px auto;
+      padding: 0 16px;
+    }
+    .card {
+      background: white;
+      padding: 22px;
+      border-radius: 16px;
+      box-shadow: 0 4px 18px #00000010;
+      margin-bottom: 20px;
+    }
+    .poster {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+    h1 { margin: 0; font-size: 26px; }
+    h2 { color: #172554; }
+    .button {
+      display: block;
+      padding: 15px;
+      margin-top: 12px;
+      border-radius: 9px;
+      background: #1d4ed8;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .secondary { background: #15803d; }
+    footer { padding: 20px; color: #6b7280; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ÉGLISE ÉRÉVIE PRÉSENTE</h1>
+    <p>Bienvenue à notre grande rencontre de prière</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Grande Veillée de Prière</h2>
+      <img
+        class="poster"
+        src="affiche-veillee.png"
+        alt="Affiche officielle de la Grande Veillée de Prière">
+      <p><strong>Vendredi 16 octobre 2026</strong></p>
+      <p>À partir de 21 h 30</p>
+      <p>Venez nombreux pour ce temps de prière et de communion fraternelle.</p>
+    </section>
+
+    <section class="card">
+      <h2>📍 Lieu de l'événement</h2>
+      <p>Yopougon Banco, Carrefour Alloco, Abidjan</p>
+      <a class="button"
+         href="https://www.google.com/maps/search/?api=1&amp;query=9W3V%2BQX%20Abidjan%2C%20C%C3%B4te%20d%27Ivoire"
+         target="_blank" rel="noopener">
+        Voir la localisation sur Google Maps
+      </a>
+      <a class="button secondary"
+         href="https://yango.com/"
+         target="_blank" rel="noopener">
+        Accéder à Yango
+      </a>
+    </section>
+
+    <section class="card">
+      <h2>Invitez vos proches</h2>
+      <p>Partagez cette invitation avec vos amis, votre famille et les membres de l'église.</p>
+      <button class="button"
+        style="width:100%;border:0;cursor:pointer"
+        onclick="partager()">
+        Partager sur WhatsApp
+      </button>
+    </section>
+  </main>
+
+  <footer>© 2026 — Église Érévie Présente</footer>
+
+  <script>
+    function partager() {
+      const message =
+        "Vous êtes invités à la Grande Veillée de Prière de l'Église Érévie Présente, vendredi 16 octobre 2026 à 21 h 30, à Yopougon Banco, Carrefour Alloco. Retrouvez les informations sur : " +
+        window.location.href;
+      window.open(
+        "https://wa.me/?text=" + encodeURIComponent(message),
+        "_blank"
+      );
+    }
+  </script>
+</body>
+</html>
